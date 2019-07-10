@@ -1,0 +1,35 @@
+% General
+\newcommand{\ParameterSet}[1]{\texttt{#1}\xspace}
+\newcommand{\Software}[1]{\textsc{#1}\xspace}
+\newcommand{\SoftwareVersion}[1]{v#1\xspace}
+
+% MC
+\newcommand{\FEWZ}{\Software{fewz}}
+\newcommand{\GEANTfour}{\Software{Geant4}}
+\newcommand{\MADGRAPH}{\Software{MadGraph}}
+\newcommand{\RESBOS}{\Software{RESBOS}}
+\newcommand{\AMCatNLO}{\Software{aMC@NLO}}
+\newcommand{\POWHEG}{\Software{powheg}}
+\newcommand{\PYTHIAeight}{\Software{Pythia8}}
+\newcommand{\PYTHIAsix}{\Software{Pythia6}}
+\newcommand{\PYTHIA}{\Software{Pythia}}
+\newcommand{\Tauola}{\Software{Tauola}}
+\newcommand{\BLUE}{\Software{BLUE}}
+% Analysis
+\newcommand{\FSRWeightProducer}{\Software{FSRWeightProducer}}
+\newcommand{\PDFWeightProducer}{\Software{PDFWeightProducer}}
+\newcommand{\RooUnfold}{\Software{RooUnfold}}
+
+% Tunes
+\newcommand{\ZTwoStar}{\ParameterSet{Z2star}}
+\newcommand{\CTten}{\ParameterSet{CT10}}
+\newcommand{\TunePPfive}{\ParameterSet{Tunepp5}}
+\newcommand{\TunePPfourteen}{\ParameterSet{Tunepp14}}
+
+% Combined POWHEG+Pythia
+
+\newcommand{\POWHEGPlus}[2]{\ensuremath{\POWHEG+#1} (#2)\xspace}
+
+\newcommand{\PPsixZtwo}{\POWHEGPlus{\PYTHIAsix}{\ZTwoStar}}
+\newcommand{\PPeightTTfive}{\POWHEGPlus{\PYTHIAeight}{\TunePPfive}}
+\newcommand{\PPeightTTfourteen}{\POWHEGPlus{\PYTHIAeight}{\TunePPfourteen}}
